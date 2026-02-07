@@ -87,3 +87,29 @@ nav {
     position: sticky;/*pour  mettre le menu visible en haut meme quand tu descends en bas de la page*/
     top: 0;
 }
+/* Styles responsive pour mobile */
+@media screen and (max-width: 600px) {
+  nav  {
+    flex-direction: column;   /* menu vertical sur mobile */
+    gap: 15px;                /* réduit l’espace entre les items */
+    text-align: center;       /* centre le texte */
+  }
+
+  header {
+    padding: 5px 0;           /* moins de padding pour mobile */
+  }
+
+  nav  li a {
+    font-size: 16px;          /* texte plus lisible sur mobile */
+  }
+
+  img {
+    max-width: 100%;          /* images s’adaptent à l’écran */
+    height: auto;
+  }
+
+  section {
+    flex-direction: column;   /* sections passent en colonne */
+    padding: 10px;
+  }
+}
